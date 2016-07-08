@@ -1,23 +1,35 @@
+var webpack = require("webpack");
+
 module.exports = function(config, options){
 
   config.set({
     basePath:  '',
     frameworks: ['mocha', 'chai'],
     files: [
-      './tests/**/*.js'
+      'tests/**/*.js'
     ],
     preprocessors: {
-      './tests/**/*.js': ['babel']
+      'tests/**/*.js': ['webpack']
     },
-    babelPreprocessor: {
-      options: {
-        presets: ['es2015']
+    webpack: {
+      resolve: {
+        extensions: ["", ".js"]
       },
-      filename: function (file) {
-        return file.originalPath.replace(/\.js$/, '.es5.js');
-      },
-      sourceFileName: function (file) {
-        return file.originalPath;
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            loader: "babel-loader",
+            query: {
+              presets: ['es2015', 'stage-0']
+            }
+          }
+        ]
+      }
+    },
+    webpackMiddleware: {
+      stats: {
+        colors: true
       }
     },
     exclude: [
@@ -28,7 +40,8 @@ module.exports = function(config, options){
       "karma-chai",
       "karma-mocha",
       "karma-phantomjs-launcher",
-      'karma-mocha-reporter'
+      'karma-mocha-reporter',
+      'karma-webpack'
     ],
     port: 9876,
     colors: true,

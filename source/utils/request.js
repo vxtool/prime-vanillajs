@@ -6,7 +6,7 @@
  * @param {function} errorHandler - for failed requests
  *
  */
-export default function makeRequest(url, successHandler, errorHandler) {
+export function makeRequest(url, successHandler, errorHandler) {
   let xmlhttp = new XMLHttpRequest();
 
   xmlhttp.open('GET', url, true);
