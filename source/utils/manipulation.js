@@ -6,7 +6,7 @@
  * @returns {boolean}
  *
  */
-export default function hasClass(element, className) {
+export function hasClass(element, className) {
   if (element.classList) {
     return element.classList.contains(className);
   }
@@ -22,12 +22,17 @@ export default function hasClass(element, className) {
  * @param {string} className -
  *
  */
-export default function addClass(element, className) {
-  if (element.classList) {
-    element.classList.add(className);
-  }
-  else if (!hasClass(element, className)) {
-    element.className += " " + className;
+export function addClass(element, className) {
+  try {
+    if (element.classList) {
+      element.classList.add(className);
+    }
+    else if (!hasClass(element, className)) {
+      element.className += " " + className;
+    }
+    return true;
+  } catch(error) {
+    return false;
   }
 }
 
@@ -38,12 +43,17 @@ export default function addClass(element, className) {
  * @param {string} className -
  *
  */
-export default function removeClass(element, className) {
-  if (element.classList){
-    element.classList.remove(className);
-  }
-  else if (hasClass(el, className)) {
-    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
-    element.className = element.className.replace(reg, ' ');
+export function removeClass(element, className) {
+  try {
+    if (element.classList){
+      element.classList.remove(className);
+    }
+    else if (hasClass(el, className)) {
+      var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+      element.className = element.className.replace(reg, ' ');
+    }
+    return true;
+  } catch(error) {
+    return false;
   }
 }
