@@ -1,5 +1,6 @@
-var webpack = require('webpack');
-var config = require('./webpack.config.js');
+var webpack   = require('webpack');
+var validate  = require('webpack-validator');
+var config    = require('./webpack.config.js');
 
 config.plugins = config.plugins.concat([
   new webpack.DefinePlugin({
@@ -17,4 +18,4 @@ config.devServer: {
 
 config.devtool: 'source-map';
 
-module.exports = config;
+module.exports = validate(config);

@@ -1,5 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
+var path      = require('path');
+var webpack   = require('webpack');
+var validate  = require('webpack-validator');
 
 var NODE_ENV = process.env.NODE_ENV;
 
@@ -15,7 +16,7 @@ var PATHS = {
   build: path.resolve(__dirname, '../dist')
 };
 
-module.exports = {
+module.exports = validate({
   env : NODE_ENV,
   entry: {
     app: path.resolve(PATHS.app, 'main.js')
@@ -68,4 +69,4 @@ module.exports = {
     net: 'empty',
     tls: 'empty'
   }
-};
+});
