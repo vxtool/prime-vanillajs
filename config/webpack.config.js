@@ -1,15 +1,8 @@
+'use strict';
+
 var path      = require('path');
 var webpack   = require('webpack');
 var validate  = require('webpack-validator');
-
-var NODE_ENV = process.env.NODE_ENV;
-
-var env = {
-  production: NODE_ENV === 'production',
-  staging: NODE_ENV === 'staging',
-  test: NODE_ENV === 'test',
-  development: NODE_ENV === 'development' || typeof NODE_ENV === 'undefined'
-};
 
 var PATHS = {
   app: path.resolve(__dirname, '../source'),
@@ -17,10 +10,9 @@ var PATHS = {
 };
 
 module.exports = validate({
-  env : NODE_ENV,
-  entry: {
-    app: path.resolve(PATHS.app, 'main.js')
-  },
+  entry: [
+    path.resolve(PATHS.app, 'main.js')
+  ],
   output: {
     path: PATHS.build,
     filename: 'js/scripts.min.js',
@@ -34,7 +26,7 @@ module.exports = validate({
     extensions: ['', '.js']
   },
   eslint: {
-    configFile: '../.eslintrc'
+    configFile: '.eslintrc'
   },
   module: {
     preLoaders: [
@@ -54,15 +46,10 @@ module.exports = validate({
         },
         include: PATHS.app
       }
-    ]
+    ],
+    noParse: /\.min\.js/
   },
-  plugins: [
-    new webpack.DefinePlugin({
-    __DEV__: env.development,
-    __STAGING__: env.staging,
-    __PRODUCTION__: env.production,
-    __CURRENT_ENV__: '\'' + (NODE_ENV) + '\''
-  })],
+  plugins: [],
   node: {
     console: true,
     fs: 'empty',
