@@ -26,7 +26,8 @@
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
   "parser": "babel-eslint",
   "plugins": [
@@ -80,7 +81,7 @@
     "no-caller": 1,
     "no-div-regex": 1,
     "no-else-return": 1,
-    "no-empty-label": 1,
+    "no-empty-label": 0,
     "no-eq-null": 0,
     "no-eval": 1,
     "no-extend-native": 1,
@@ -187,7 +188,7 @@
     "space-before-function-paren": [1, "never"],
     "space-in-parens": [1, "never"],
     "space-infix-ops": 1,
-    "space-return-throw-case": 1,
+    "space-return-throw-case": 0,
     "space-unary-ops": 0,
     "spaced-comment": [1, "always"],
     "wrap-regex": 1,

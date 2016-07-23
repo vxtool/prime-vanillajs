@@ -1,13 +1,14 @@
 /**
  * Request to the json type using XMLHttpRequest
  *
- * @param {string} url - address for the request
- * @param {function} successHandler - for success in the request
- * @param {function} errorHandler - for failed requests
+ * @param {string} url Address for the request
+ * @param {function} successHandler For success in the request
+ * @param {function} errorHandler For failed requests
+ * @returns {function} callback
  *
  */
 export function makeRequest(url, successHandler, errorHandler) {
-  let xmlhttp = new XMLHttpRequest();
+  const xmlhttp = new XMLHttpRequest();
 
   xmlhttp.open('GET', url, true);
   xmlhttp.responseType = 'json';
@@ -16,7 +17,9 @@ export function makeRequest(url, successHandler, errorHandler) {
     if (xmlhttp.readyState === xmlhttp.DONE) {
       if (xmlhttp.status === 200) {
         successHandler && successHandler(xmlhttp.response);
-      } else {
+      }
+
+      else {
         errorHandler && errorHandler(xmlhttp.status);
       }
     }

@@ -1,25 +1,30 @@
 /**
  * Find the class in the element
  *
- * @param {DOM} element -
- * @param {string} className -
- * @returns {boolean}
+ * @param {DOM} element Id of element
+ * @param {string} className Id of class
+ * @returns {boolean} result Validation
  *
  */
 export function hasClass(element, className) {
+  let result;
   if (element.classList) {
-    return element.classList.contains(className);
+    result = element.classList.contains(className);
   }
+
   else {
-    return !!element.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+    result = !!element.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
   }
+
+  return result;
 }
 
 /**
  * Add the class of element
  *
- * @param {DOM} element -
- * @param {string} className -
+ * @param {DOM} element Id of element
+ * @param {string} className Id of class
+ * @returns {boolean} For to have a return
  *
  */
 export function addClass(element, className) {
@@ -28,10 +33,12 @@ export function addClass(element, className) {
       element.classList.add(className);
     }
     else if (!hasClass(element, className)) {
-      element.className += " " + className;
+      element.className = element.className + ' ' + className;
     }
     return true;
-  } catch(error) {
+  }
+
+  catch(error) {
     return false;
   }
 }
@@ -39,21 +46,24 @@ export function addClass(element, className) {
 /**
  * Remove the class of element
  *
- * @param {DOM} element -
- * @param {string} className -
+ * @param {DOM} element Id of element
+ * @param {string} className Id of class
+ * @returns {boolean} For to have a return
  *
  */
 export function removeClass(element, className) {
   try {
-    if (element.classList){
+    if (element.classList) {
       element.classList.remove(className);
     }
-    else if (hasClass(el, className)) {
-      var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+    else if (hasClass(element, className)) {
+      const reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
       element.className = element.className.replace(reg, ' ');
     }
     return true;
-  } catch(error) {
+  }
+
+  catch(error) {
     return false;
   }
 }
