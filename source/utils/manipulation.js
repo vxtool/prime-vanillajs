@@ -10,10 +10,8 @@ export function hasClass(element, className) {
   let result;
   if (element.classList) {
     result = element.classList.contains(className);
-  }
-
-  else {
-    result = !!element.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+  } else {
+    result = !!element.className.match(new RegExp(`(\\s|^)${className}(\\s|$)`));
   }
 
   return result;
@@ -27,18 +25,17 @@ export function hasClass(element, className) {
  * @returns {boolean} For to have a return
  *
  */
-export function addClass(element, className) {
+export function addClass(target, className) {
+  const element = target;
   try {
     if (element.classList) {
       element.classList.add(className);
-    }
-    else if (!hasClass(element, className)) {
-      element.className = element.className + ' ' + className;
+    } else if (!hasClass(element, className)) {
+      const newValue = `${element.className} ${className}`;
+      element.className = newValue;
     }
     return true;
-  }
-
-  catch(error) {
+  } catch (error) {
     return false;
   }
 }
@@ -51,19 +48,18 @@ export function addClass(element, className) {
  * @returns {boolean} For to have a return
  *
  */
-export function removeClass(element, className) {
+export function removeClass(target, className) {
+  const element = target;
   try {
     if (element.classList) {
       element.classList.remove(className);
-    }
-    else if (hasClass(element, className)) {
-      const reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
-      element.className = element.className.replace(reg, ' ');
+    } else if (hasClass(element, className)) {
+      const reg = new RegExp(`(\\s|^)${className}(\\s|$)`);
+      const newValue = element.className.replace(reg, ' ');
+      element.className = newValue;
     }
     return true;
-  }
-
-  catch(error) {
+  } catch (error) {
     return false;
   }
 }

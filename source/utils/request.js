@@ -7,7 +7,7 @@
  * @returns {function} callback
  *
  */
-export function makeRequest(url, successHandler, errorHandler) {
+export default function makeRequest(url, successHandler, errorHandler) {
   const xmlhttp = new XMLHttpRequest();
 
   xmlhttp.open('GET', url, true);
@@ -16,11 +16,11 @@ export function makeRequest(url, successHandler, errorHandler) {
   xmlhttp.onreadystatechange = () => {
     if (xmlhttp.readyState === xmlhttp.DONE) {
       if (xmlhttp.status === 200) {
-        successHandler && successHandler(xmlhttp.response);
-      }
-
-      else {
-        errorHandler && errorHandler(xmlhttp.status);
+        if (successHandler) {
+          successHandler(xmlhttp.response);
+        }
+      } else if (errorHandler) {
+        errorHandler(xmlhttp.status);
       }
     }
   };

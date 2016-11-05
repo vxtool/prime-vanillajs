@@ -7,6 +7,4 @@ addClass($element, 'test');
 hasClass($element, 'test');
 removeClass($element, 'test');
 
-makeRequest({ url: '/' }, (data) => {
-  console.warn(data);
-});
+makeRequest({ url: '/' }, () => {});
