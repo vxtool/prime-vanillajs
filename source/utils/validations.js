@@ -5,7 +5,7 @@
  * @returns {string}
  *
  */
-export const getObjectType = (prop) => {
+export function getObjectType(prop) {
   return Object.prototype.toString.call(prop);
 }
 
@@ -17,10 +17,10 @@ export const getObjectType = (prop) => {
  * @returns {string} type
  *
  */
-export const objectType = (prop) => {
+export function objectType(prop) {
   let type;
 
-  switch(prop){
+  switch (prop) {
     case 'object':
       type = '[object Object]';
       break;
@@ -36,6 +36,9 @@ export const objectType = (prop) => {
     case 'number':
       type = '[object Number]';
       break;
+    default:
+      type = false;
+      break;
   }
 
   return type;
@@ -48,10 +51,10 @@ export const objectType = (prop) => {
  * @returns {boolean}
  *
  */
-export const isUndefinedOrNull = (prop) => {
-  if (typeof(prop) === "undefined" || prop === null) {
+export function isUndefinedOrNull(prop) {
+  if (typeof prop === 'undefined' || prop === null) {
     return true;
-  } else {
-    return false;
   }
+
+  return false;
 }

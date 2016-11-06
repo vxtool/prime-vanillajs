@@ -1,4 +1,4 @@
-import {getObjectType, objectType, isUndefinedOrNull} from "../../utils/validations";
+import { getObjectType, objectType, isUndefinedOrNull } from '../../utils/validations';
 
 /**
  * Price format
@@ -8,40 +8,44 @@ import {getObjectType, objectType, isUndefinedOrNull} from "../../utils/validati
  * @param {number} toFixed
  * @param {string} thousandsSeparator
  * @param {string} centsSeparator
- * @returns {string} price
+ * @returns {string} newPrice
  *
  */
-export const priceFormat = (price, prefix, toFixed, thousandsSeparator, centsSeparator) => {
+export function priceFormat(price, prefix, toFixed, thousandsSeparator, centsSeparator) {
   if (isUndefinedOrNull(price)) {
     return false;
   }
 
-  if (getObjectType(price) === objectType('number')) {
-    if (isUndefinedOrNull(toFixed)) {
-      toFixed = 2;
+  let newPrice = price;
+  let newThousandsSeparator = thousandsSeparator;
+  let newToFixed = toFixed;
+
+  if (getObjectType(newPrice) === objectType('number')) {
+    if (isUndefinedOrNull(newToFixed)) {
+      newToFixed = 2;
     }
 
-    price = price.toFixed(toFixed);
+    newPrice = newPrice.toFixed(newToFixed);
 
     if (centsSeparator === ',') {
-       price = price.replace('.', ',');
+      newPrice = newPrice.replace('.', ',');
     }
 
-    if (thousandsSeparator !== ',') {
-      thousandsSeparator = '.';
+    if (newThousandsSeparator !== ',') {
+      newThousandsSeparator = '.';
     }
 
-    price = price.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1"+thousandsSeparator);
+    newPrice = newPrice.replace(/(\d)(?=(\d{3})+(?!\d))/g, `$1${newThousandsSeparator}`);
 
     if (prefix) {
-      price = prefix + " " + price;
+      newPrice = `${prefix} ${newPrice}`;
     }
 
-    return price;
-  } else {
-    return false;
+    return newPrice;
   }
-};
+
+  return false;
+}
 
 /**
  * Price format to real
@@ -50,40 +54,42 @@ export const priceFormat = (price, prefix, toFixed, thousandsSeparator, centsSep
  * @returns {string} price
  *
  */
-export const priceFormatToReal = (price) => {
-  if(isUndefinedOrNull(price)){
+export function priceFormatToReal(price) {
+  if (isUndefinedOrNull(price)) {
     return false;
   }
   return priceFormat(price, 'R$', 2, '.', ',');
-};
+}
 
 /**
  * Price unformat
  *
  * @param {number} price
- * @returns {number} price
+ * @returns {number} newPrice
  *
  */
-export const priceUnformat = (price) => {
-  if(isUndefinedOrNull(price)){
+export function priceUnformat(price) {
+  if (isUndefinedOrNull(price)) {
     return false;
   }
 
-  if(getObjectType(price) === objectType('string')){
-      price = price.replace(/[^0-9]/g, '');
-      price = price.replace(/(\d*)(?=(\d{2}))/, "$1.");
+  let newPrice = price;
 
-      if (price.match('.00')) {
-        return parseFloat(price).toFixed(2);
-      } else {
-        return parseFloat(price);
-      }
-  } else if(getObjectType(price) === objectType('number')){
-    return price;
-  } else {
-    return false;
+  if (getObjectType(newPrice) === objectType('string')) {
+    newPrice = newPrice.replace(/[^0-9]/g, '');
+    newPrice = newPrice.replace(/(\d*)(?=(\d{2}))/, '$1.');
+
+    if (newPrice.match('.00')) {
+      return parseFloat(newPrice).toFixed(2);
+    }
+
+    return parseFloat(newPrice);
+  } else if (getObjectType(newPrice) === objectType('number')) {
+    return newPrice;
   }
-};
+
+  return false;
+}
 
 /**
  * Product price
@@ -91,20 +97,22 @@ export const priceUnformat = (price) => {
  * @param {object} product
  * @param {number} price
  * @param {string} text
- * @returns {object} product
+ * @returns {object} newProduct
  *
  */
-export const productPrice = (product, price, text) => {
+export function productPrice(product, price, text) {
   if (isUndefinedOrNull(product) || isUndefinedOrNull(price)) {
     return false;
   }
 
-  if(getObjectType(product) === objectType('object')){
-    product.sales_price = priceFormatToReal(price);
-    product.textPrice   = text || 'por:';
+  const newProduct = product;
 
-    return product;
-  } else {
-    return false;
+  if (getObjectType(newProduct) === objectType('object')) {
+    newProduct.sales_price = priceFormatToReal(price);
+    newProduct.textPrice = text || 'por:';
+
+    return newProduct;
   }
+
+  return false;
 }
