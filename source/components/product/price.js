@@ -79,8 +79,9 @@ export function priceUnformat(price) {
     newPrice = newPrice.replace(/[^0-9]/g, '');
     newPrice = newPrice.replace(/(\d*)(?=(\d{2}))/, '$1.');
 
-    if (newPrice.match('.00')) {
-      return parseFloat(newPrice).toFixed(2);
+    if (newPrice.includes('.00')) {
+      newPrice = parseFloat(newPrice).toFixed(2);
+      return newPrice;
     }
 
     return parseFloat(newPrice);
@@ -100,7 +101,7 @@ export function priceUnformat(price) {
  * @returns {object} newProduct
  *
  */
-export function productPrice(product, price, text) {
+export function productPrice(product, price, text = 'por:') {
   if (isUndefinedOrNull(product) || isUndefinedOrNull(price)) {
     return false;
   }
@@ -109,7 +110,7 @@ export function productPrice(product, price, text) {
 
   if (getObjectType(newProduct) === objectType('object')) {
     newProduct.sales_price = priceFormatToReal(price);
-    newProduct.textPrice = text || 'por:';
+    newProduct.textPrice = text;
 
     return newProduct;
   }

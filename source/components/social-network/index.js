@@ -1,3 +1,5 @@
+import { getObjectType, objectType, isUndefinedOrNull } from '../../utils/validations';
+
 /**
  * Abbreviate Large Numbers
  * @param {number} num
@@ -9,7 +11,7 @@
  * @returns {string} formattedNumber
  */
 export default function abbreviateLargeNumbers(numValue) {
-  if (typeof numValue !== 'number' || typeof numValue === 'undefined') {
+  if (getObjectType(numValue) !== objectType('number') || isUndefinedOrNull(numValue)) {
     return false;
   }
 
