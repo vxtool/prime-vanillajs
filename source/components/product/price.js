@@ -85,7 +85,7 @@ export function priceUnformat(price) {
     }
 
     return parseFloat(newPrice);
-  } else if (getObjectType(newPrice) === objectType('number')) {
+  } if (getObjectType(newPrice) === objectType('number')) {
     return newPrice;
   }
 
