@@ -1,10 +1,10 @@
 {
-  "name": "prime-vanillajs",
+  "name": "@vxtool/prime-vanillajs",
   "version": "1.0.1",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prime-solutions/prime-vanillajs.git"
+    "url": "git+https://github.com/vxtool/prime-vanillajs.git"
   },
   "main": "source/main.js",
   "scripts": {
@@ -18,9 +18,9 @@
   "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://descco.com.br)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prime-solutions/prime-vanillajs/issues"
+    "url": "https://github.com/vxtool/prime-vanillajs/issues"
   },
-  "homepage": "https://github.com/prime-solutions/prime-vanillajs#readme",
+  "homepage": "https://github.com/vxtool/prime-vanillajs#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "6.26.3",
