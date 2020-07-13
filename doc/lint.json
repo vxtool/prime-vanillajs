@@ -1,0 +1,158 @@
+[
+  {
+    "name": "abbreviateLargeNumbers",
+    "filePath": "source/components/social-network/index.js",
+    "lines": [
+      {
+        "lineNumber": 2,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * Abbreviate Large Numbers"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @param {number} num"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @property {boolean} isNegative"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @property {string} formattedNumber"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @property {number} thousand"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @property {number} million"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @property {number} billion"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * @returns {string} formattedNumber"
+      },
+      {
+        "lineNumber": 11,
+        "line": " */"
+      },
+      {
+        "lineNumber": 12,
+        "line": "export default function abbreviateLargeNumbers(numValue) {"
+      }
+    ],
+    "codeParams": [
+      "numValue"
+    ],
+    "docParams": [
+      "num"
+    ]
+  },
+  {
+    "name": "addClass",
+    "filePath": "source/utils/manipulation.js",
+    "lines": [
+      {
+        "lineNumber": 19,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 20,
+        "line": " * Add the class of element"
+      },
+      {
+        "lineNumber": 21,
+        "line": " *"
+      },
+      {
+        "lineNumber": 22,
+        "line": " * @param {DOM} element Id of element"
+      },
+      {
+        "lineNumber": 23,
+        "line": " * @param {string} className Id of class"
+      },
+      {
+        "lineNumber": 24,
+        "line": " * @returns {boolean} For to have a return"
+      },
+      {
+        "lineNumber": 25,
+        "line": " *"
+      },
+      {
+        "lineNumber": 26,
+        "line": " */"
+      },
+      {
+        "lineNumber": 27,
+        "line": "export function addClass(target, className) {"
+      }
+    ],
+    "codeParams": [
+      "target",
+      "className"
+    ],
+    "docParams": [
+      "element",
+      "className"
+    ]
+  },
+  {
+    "name": "removeClass",
+    "filePath": "source/utils/manipulation.js",
+    "lines": [
+      {
+        "lineNumber": 42,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 43,
+        "line": " * Remove the class of element"
+      },
+      {
+        "lineNumber": 44,
+        "line": " *"
+      },
+      {
+        "lineNumber": 45,
+        "line": " * @param {DOM} element Id of element"
+      },
+      {
+        "lineNumber": 46,
+        "line": " * @param {string} className Id of class"
+      },
+      {
+        "lineNumber": 47,
+        "line": " * @returns {boolean} For to have a return"
+      },
+      {
+        "lineNumber": 48,
+        "line": " *"
+      },
+      {
+        "lineNumber": 49,
+        "line": " */"
+      },
+      {
+        "lineNumber": 50,
+        "line": "export function removeClass(target, className) {"
+      }
+    ],
+    "codeParams": [
+      "target",
+      "className"
+    ],
+    "docParams": [
+      "element",
+      "className"
+    ]
+  }
+]

@@ -8,6 +8,35 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/vxtool/prime-vanillajs.svg)
 ![GitHub All Releases](https://img.shields.io/github/downloads/vxtool/prime-vanillajs/total.svg)
 
+## Prerequisites
+- Node >= v12.18.2
+- NPM >= v6.14.5
+- Yarn >= v1.22.0 or npm install -g yarn
+
+## .gitconfig
+
+Git's merge commit message
+
+```
+[alias]
+    mergelogmsg = "!f() { var=$(git symbolic-ref --short HEAD) && printf 'Merge branch %s into %s\n\n::SUMMARY::\nBranch %s commits:\n' $1 $var $1 > temp_merge_msg && git log --format=format:'%s' $var..$1 >> temp_merge_msg && printf '\n\nBranch %s commits:\n' $var >> temp_merge_msg && git log --format=format:'%s' $1..$var >> temp_merge_msg && printf '\n\n* * * * * * * * * * * * * * * * * * * * * * * * *\n::DETAILS::\n' >> temp_merge_msg && git log --left-right $var...$1 >> temp_merge_msg && git merge --no-ff --no-commit $1 && git commit -eF temp_merge_msg; rm -f temp_merge_msg;}; f"
+```
+
+## Install
+
+```
+yarn
+```
+
+## Commands
+
+- **yarn start**
+- **yarn build**
+- **yarn lib**
+- **yarn release**
+- **yarn doc**
+
+
 ## Contributing
 
 - Fork it!

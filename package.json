@@ -6,47 +6,36 @@
     "type": "git",
     "url": "git+https://github.com/vxtool/prime-vanillajs.git"
   },
-  "main": "source/main.js",
+  "main": "lib",
   "scripts": {
-    "prepush": "npm run lint",
-    "test": "./node_modules/.bin/karma start karma.conf.js",
-    "lint": "./node_modules/.bin/eslint source/**",
-    "doc": "./node_modules/.bin/esdoc -c esdoc.json",
-    "build:dev": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.dev.js --progress --inline --hot --port 3000 --content-base ./dist",
-    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.prod.js --progress --colors"
+    "build": "npm run compile && npm run bundle",
+    "bundle": "browserify ./example/index.compiled.js -o ./example/bundle.js",
+    "compile": "babel ./example/index.js --out-file ./example/index.compiled.js",
+    "lib": "babel ./source --out-dir ./lib",
+    "release": "release-it --no-npm.publish --git.tagName='v${version}' --github.release",
+    "doc": "esdoc -c esdoc.json",
+    "start": "http-server ./example -p 9000"
   },
-  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://descco.com.br)",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://nerdcalistenico.com.br)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vxtool/prime-vanillajs/issues"
   },
   "homepage": "https://github.com/vxtool/prime-vanillajs#readme",
-  "dependencies": {},
   "devDependencies": {
-    "babel-core": "6.26.3",
-    "babel-eslint": "10.0.2",
-    "babel-loader": "8.0.6",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-stage-0": "6.24.1",
-    "chai": "4.2.0",
+    "@babel/cli": "7.10.4",
+    "@babel/core": "7.10.4",
+    "@babel/plugin-transform-runtime": "7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "@babel/runtime": "7.10.4",
+    "browserify": "16.5.1",
     "esdoc": "1.1.0",
-    "eslint": "6.0.1",
-    "eslint-config-airbnb": "17.1.1",
-    "eslint-loader": "2.2.1",
-    "eslint-plugin-babel": "5.3.0",
-    "eslint-plugin-import": "2.18.0",
-    "husky": "3.0.0",
-    "karma": "4.1.0",
-    "karma-babel-preprocessor": "8.0.1",
-    "karma-chai": "0.1.0",
-    "karma-mocha": "1.3.0",
-    "karma-mocha-reporter": "2.2.5",
-    "karma-phantomjs-launcher": "1.0.4",
-    "karma-webpack": "4.0.2",
-    "mocha": "6.1.4",
-    "phantomjs": "2.1.7",
-    "webpack": "4.35.3",
-    "webpack-dev-server": "3.7.2",
-    "webpack-validator": "3.0.1"
+    "esdoc-standard-plugin": "1.0.0",
+    "http-server": "0.12.3",
+    "release-it": "13.6.4",
+    "uniq": "1.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

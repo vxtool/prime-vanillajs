@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">source/components/product/price.js | @vxtool/prime-vanillajs</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/vxtool/prime-vanillajs"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-product">components/product</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-priceFormat">priceFormat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-priceFormatToReal">priceFormatToReal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-priceUnformat">priceUnformat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-productPrice">productPrice</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-social-network">components/social-network</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-abbreviateLargeNumbers">abbreviateLargeNumbers</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addClass">addClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasClass">hasClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeClass">removeClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-makeRequest">makeRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getObjectType">getObjectType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUndefinedOrNull">isUndefinedOrNull</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objectType">objectType</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">source/components/product/price.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { getObjectType, objectType, isUndefinedOrNull } from &apos;../../utils/validations&apos;;
+
+/**
+ * Price format
+ *
+ * @param {number} price
+ * @param {string} prefix
+ * @param {number} toFixed
+ * @param {string} thousandsSeparator
+ * @param {string} centsSeparator
+ * @returns {string} newPrice
+ *
+ */
+export function priceFormat(price, prefix, toFixed, thousandsSeparator, centsSeparator) {
+  if (isUndefinedOrNull(price)) {
+    return false;
+  }
+
+  let newPrice = price;
+  let newThousandsSeparator = thousandsSeparator;
+  let newToFixed = toFixed;
+
+  if (getObjectType(newPrice) === objectType(&apos;number&apos;)) {
+    if (isUndefinedOrNull(newToFixed)) {
+      newToFixed = 2;
+    }
+
+    newPrice = newPrice.toFixed(newToFixed);
+
+    if (centsSeparator === &apos;,&apos;) {
+      newPrice = newPrice.replace(&apos;.&apos;, &apos;,&apos;);
+    }
+
+    if (newThousandsSeparator !== &apos;,&apos;) {
+      newThousandsSeparator = &apos;.&apos;;
+    }
+
+    newPrice = newPrice.replace(/(\d)(?=(\d{3})+(?!\d))/g, `$1${newThousandsSeparator}`);
+
+    if (prefix) {
+      newPrice = `${prefix} ${newPrice}`;
+    }
+
+    return newPrice;
+  }
+
+  return false;
+}
+
+/**
+ * Price format to real
+ *
+ * @param {number} price
+ * @returns {string} price
+ *
+ */
+export function priceFormatToReal(price) {
+  if (isUndefinedOrNull(price)) {
+    return false;
+  }
+  return priceFormat(price, &apos;R$&apos;, 2, &apos;.&apos;, &apos;,&apos;);
+}
+
+/**
+ * Price unformat
+ *
+ * @param {number} price
+ * @returns {number} newPrice
+ *
+ */
+export function priceUnformat(price) {
+  if (isUndefinedOrNull(price)) {
+    return false;
+  }
+
+  let newPrice = price;
+
+  if (getObjectType(newPrice) === objectType(&apos;string&apos;)) {
+    newPrice = newPrice.replace(/[^0-9]/g, &apos;&apos;);
+    newPrice = newPrice.replace(/(\d*)(?=(\d{2}))/, &apos;$1.&apos;);
+
+    if (newPrice.includes(&apos;.00&apos;)) {
+      newPrice = parseFloat(newPrice).toFixed(2);
+      return newPrice;
+    }
+
+    return parseFloat(newPrice);
+  } if (getObjectType(newPrice) === objectType(&apos;number&apos;)) {
+    return newPrice;
+  }
+
+  return false;
+}
+
+/**
+ * Product price
+ *
+ * @param {object} product
+ * @param {number} price
+ * @param {string} text
+ * @returns {object} newProduct
+ *
+ */
+export function productPrice(product, price, text = &apos;por:&apos;) {
+  if (isUndefinedOrNull(product) || isUndefinedOrNull(price)) {
+    return false;
+  }
+
+  const newProduct = product;
+
+  if (getObjectType(newProduct) === objectType(&apos;object&apos;)) {
+    newProduct.sales_price = priceFormatToReal(price);
+    newProduct.textPrice = text;
+
+    return newProduct;
+  }
+
+  return false;
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

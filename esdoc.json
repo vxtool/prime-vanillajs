@@ -1,8 +1,7 @@
 {
-  "source": "./source/",
-  "destination": "./dist/doc",
-  "test": {
-    "type": "mocha",
-    "source": "./tests"
-  }
+  "source": "./source",
+  "destination": "./doc",
+  "plugins": [
+    {"name": "esdoc-standard-plugin"}
+  ]
 }
