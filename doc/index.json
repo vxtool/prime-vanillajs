@@ -1,0 +1,1369 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "source/components/product/price.js",
+    "content": "import { getObjectType, objectType, isUndefinedOrNull } from '../../utils/validations';\n\n/**\n * Price format\n *\n * @param {number} price\n * @param {string} prefix\n * @param {number} toFixed\n * @param {string} thousandsSeparator\n * @param {string} centsSeparator\n * @returns {string} newPrice\n *\n */\nexport function priceFormat(price, prefix, toFixed, thousandsSeparator, centsSeparator) {\n  if (isUndefinedOrNull(price)) {\n    return false;\n  }\n\n  let newPrice = price;\n  let newThousandsSeparator = thousandsSeparator;\n  let newToFixed = toFixed;\n\n  if (getObjectType(newPrice) === objectType('number')) {\n    if (isUndefinedOrNull(newToFixed)) {\n      newToFixed = 2;\n    }\n\n    newPrice = newPrice.toFixed(newToFixed);\n\n    if (centsSeparator === ',') {\n      newPrice = newPrice.replace('.', ',');\n    }\n\n    if (newThousandsSeparator !== ',') {\n      newThousandsSeparator = '.';\n    }\n\n    newPrice = newPrice.replace(/(\\d)(?=(\\d{3})+(?!\\d))/g, `$1${newThousandsSeparator}`);\n\n    if (prefix) {\n      newPrice = `${prefix} ${newPrice}`;\n    }\n\n    return newPrice;\n  }\n\n  return false;\n}\n\n/**\n * Price format to real\n *\n * @param {number} price\n * @returns {string} price\n *\n */\nexport function priceFormatToReal(price) {\n  if (isUndefinedOrNull(price)) {\n    return false;\n  }\n  return priceFormat(price, 'R$', 2, '.', ',');\n}\n\n/**\n * Price unformat\n *\n * @param {number} price\n * @returns {number} newPrice\n *\n */\nexport function priceUnformat(price) {\n  if (isUndefinedOrNull(price)) {\n    return false;\n  }\n\n  let newPrice = price;\n\n  if (getObjectType(newPrice) === objectType('string')) {\n    newPrice = newPrice.replace(/[^0-9]/g, '');\n    newPrice = newPrice.replace(/(\\d*)(?=(\\d{2}))/, '$1.');\n\n    if (newPrice.includes('.00')) {\n      newPrice = parseFloat(newPrice).toFixed(2);\n      return newPrice;\n    }\n\n    return parseFloat(newPrice);\n  } if (getObjectType(newPrice) === objectType('number')) {\n    return newPrice;\n  }\n\n  return false;\n}\n\n/**\n * Product price\n *\n * @param {object} product\n * @param {number} price\n * @param {string} text\n * @returns {object} newProduct\n *\n */\nexport function productPrice(product, price, text = 'por:') {\n  if (isUndefinedOrNull(product) || isUndefinedOrNull(price)) {\n    return false;\n  }\n\n  const newProduct = product;\n\n  if (getObjectType(newProduct) === objectType('object')) {\n    newProduct.sales_price = priceFormatToReal(price);\n    newProduct.textPrice = text;\n\n    return newProduct;\n  }\n\n  return false;\n}\n",
+    "static": true,
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/source/components/product/price.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "priceFormat",
+    "memberof": "source/components/product/price.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/product/price.js~priceFormat",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/components/product/price.js",
+    "importStyle": "{priceFormat}",
+    "description": "Price format",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} newPrice"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "price",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prefix",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "toFixed",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "thousandsSeparator",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "centsSeparator",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "newPrice"
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "priceFormatToReal",
+    "memberof": "source/components/product/price.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/product/price.js~priceFormatToReal",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/components/product/price.js",
+    "importStyle": "{priceFormatToReal}",
+    "description": "Price format to real",
+    "lineNumber": 57,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} price"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "price",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "price"
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "priceUnformat",
+    "memberof": "source/components/product/price.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/product/price.js~priceUnformat",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/components/product/price.js",
+    "importStyle": "{priceUnformat}",
+    "description": "Price unformat",
+    "lineNumber": 71,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{number} newPrice"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "price",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": "newPrice"
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "productPrice",
+    "memberof": "source/components/product/price.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/product/price.js~productPrice",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/components/product/price.js",
+    "importStyle": "{productPrice}",
+    "description": "Product price",
+    "lineNumber": 104,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{object} newProduct"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "product",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "price",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "newProduct"
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "source/components/social-network/index.js",
+    "content": "import { getObjectType, objectType, isUndefinedOrNull } from '../../utils/validations';\n\n/**\n * Abbreviate Large Numbers\n * @param {number} num\n * @property {boolean} isNegative\n * @property {string} formattedNumber\n * @property {number} thousand\n * @property {number} million\n * @property {number} billion\n * @returns {string} formattedNumber\n */\nexport default function abbreviateLargeNumbers(numValue) {\n  if (getObjectType(numValue) !== objectType('number') || isUndefinedOrNull(numValue)) {\n    return false;\n  }\n\n  let isNegative = false;\n  let formattedNumber;\n  let num = numValue;\n\n  const thousand = 1000;\n  const million = 1000000;\n  const billion = 1000000000;\n\n  const formatterOfNumber = (numberValue, minNumber, letter) => (numberValue / minNumber).toFixed(1).replace(/\\.0$/, '') + letter;\n\n  if (num < 0) {\n    isNegative = true;\n  }\n\n  num = Math.abs(num);\n\n  if (num >= billion) {\n    formattedNumber = formatterOfNumber(num, billion, 'G');\n  } else if (num >= million) {\n    formattedNumber = formatterOfNumber(num, million, 'M');\n  } else if (num >= thousand) {\n    formattedNumber = formatterOfNumber(num, thousand, 'K');\n  } else {\n    formattedNumber = num;\n  }\n\n  if (isNegative) {\n    formattedNumber = `-${formattedNumber}`;\n  }\n\n  return formattedNumber;\n}\n",
+    "static": true,
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/source/components/social-network/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "abbreviateLargeNumbers",
+    "memberof": "source/components/social-network/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/social-network/index.js~abbreviateLargeNumbers",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/components/social-network/index.js",
+    "importStyle": "abbreviateLargeNumbers",
+    "description": "Abbreviate Large Numbers",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} formattedNumber"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "num",
+        "description": ""
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isNegative",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "formattedNumber",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "thousand",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "million",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "billion",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "formattedNumber"
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "source/utils/manipulation.js",
+    "content": "/**\n * Find the class in the element\n *\n * @param {DOM} element Id of element\n * @param {string} className Id of class\n * @returns {boolean} result Validation\n *\n */\nexport function hasClass(element, className) {\n  let result;\n  if (element.classList) {\n    result = element.classList.contains(className);\n  } else {\n    result = !!element.className.match(new RegExp(`(\\\\s|^)${className}(\\\\s|$)`));\n  }\n\n  return result;\n}\n\n/**\n * Add the class of element\n *\n * @param {DOM} element Id of element\n * @param {string} className Id of class\n * @returns {boolean} For to have a return\n *\n */\nexport function addClass(target, className) {\n  const element = target;\n  try {\n    if (element.classList) {\n      element.classList.add(className);\n    } else if (!hasClass(element, className)) {\n      const newValue = `${element.className} ${className}`;\n      element.className = newValue;\n    }\n    return true;\n  } catch (error) {\n    return false;\n  }\n}\n\n/**\n * Remove the class of element\n *\n * @param {DOM} element Id of element\n * @param {string} className Id of class\n * @returns {boolean} For to have a return\n *\n */\nexport function removeClass(target, className) {\n  const element = target;\n  try {\n    if (element.classList) {\n      element.classList.remove(className);\n    } else if (hasClass(element, className)) {\n      const reg = new RegExp(`(\\\\s|^)${className}(\\\\s|$)`);\n      const newValue = element.className.replace(reg, ' ');\n      element.className = newValue;\n    }\n    return true;\n  } catch (error) {\n    return false;\n  }\n}\n",
+    "static": true,
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/source/utils/manipulation.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "hasClass",
+    "memberof": "source/utils/manipulation.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/manipulation.js~hasClass",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/manipulation.js",
+    "importStyle": "{hasClass}",
+    "description": "Find the class in the element",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} result Validation"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "DOM"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "element",
+        "description": "Id of element"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "className",
+        "description": "Id of class"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "result Validation"
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "addClass",
+    "memberof": "source/utils/manipulation.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/manipulation.js~addClass",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/manipulation.js",
+    "importStyle": "{addClass}",
+    "description": "Add the class of element",
+    "lineNumber": 28,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} For to have a return"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "DOM"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "element",
+        "description": "Id of element"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "className",
+        "description": "Id of class"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "For to have a return"
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "removeClass",
+    "memberof": "source/utils/manipulation.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/manipulation.js~removeClass",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/manipulation.js",
+    "importStyle": "{removeClass}",
+    "description": "Remove the class of element",
+    "lineNumber": 51,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} For to have a return"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "DOM"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "element",
+        "description": "Id of element"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "className",
+        "description": "Id of class"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "For to have a return"
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "source/utils/request.js",
+    "content": "/**\n * Request to the json type using XMLHttpRequest\n *\n * @param {string} url Address for the request\n * @param {function} successHandler For success in the request\n * @param {function} errorHandler For failed requests\n * @returns {function} callback\n *\n */\nexport default function makeRequest(url, successHandler, errorHandler) {\n  const xmlhttp = new XMLHttpRequest();\n\n  xmlhttp.open('GET', url, true);\n  xmlhttp.responseType = 'json';\n\n  xmlhttp.onreadystatechange = () => {\n    if (xmlhttp.readyState === xmlhttp.DONE) {\n      if (xmlhttp.status === 200) {\n        if (successHandler) {\n          successHandler(xmlhttp.response);\n        }\n      } else if (errorHandler) {\n        errorHandler(xmlhttp.status);\n      }\n    }\n  };\n\n  xmlhttp.send();\n}\n",
+    "static": true,
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/source/utils/request.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "makeRequest",
+    "memberof": "source/utils/request.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/request.js~makeRequest",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/request.js",
+    "importStyle": "makeRequest",
+    "description": "Request to the json type using XMLHttpRequest",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{function} callback"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "Address for the request"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "successHandler",
+        "description": "For success in the request"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "errorHandler",
+        "description": "For failed requests"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": "callback"
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "source/utils/uri.js",
+    "content": "/**\n * Get Query Variable\n *\n * @param {string} variable\n * @returns {string}\n *\n */\nfunction getQueryVariable(variable) {\n  const query = window.location.search.substring(1);\n  const vars = query.split('&');\n\n  for (let i = 0, len = vars.length; i < len; i + 1) {\n    const pair = vars[i].split('=');\n    if (pair[0] === variable) {\n      return pair[1];\n    }\n  }\n  return false;\n}\n\nexport default {\n  getQueryVariable,\n};\n",
+    "static": true,
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/source/utils/uri.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "getQueryVariable",
+    "memberof": "source/utils/uri.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/uri.js~getQueryVariable",
+    "access": "public",
+    "export": false,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/uri.js",
+    "importStyle": null,
+    "description": "Get Query Variable",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "variable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "source/utils/validations.js",
+    "content": "/**\n * Get object type\n *\n * @param {object} prop\n * @returns {string}\n *\n */\nexport function getObjectType(prop) {\n  return Object.prototype.toString.call(prop);\n}\n\n/**\n * Object type\n *\n * @param {object} prop\n * @property {string} type\n * @returns {string} type\n *\n */\nexport function objectType(prop) {\n  let type;\n\n  switch (prop) {\n    case 'object':\n      type = '[object Object]';\n      break;\n    case 'array':\n      type = '[object Array]';\n      break;\n    case 'string':\n      type = '[object String]';\n      break;\n    case 'boolean':\n      type = '[object Boolean]';\n      break;\n    case 'number':\n      type = '[object Number]';\n      break;\n    default:\n      type = false;\n      break;\n  }\n\n  return type;\n}\n\n/**\n * Is undefined or null\n *\n * @param {object} prop\n * @returns {boolean}\n *\n */\nexport function isUndefinedOrNull(prop) {\n  if (typeof prop === 'undefined' || prop === null) {\n    return true;\n  }\n\n  return false;\n}\n",
+    "static": true,
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/source/utils/validations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "getObjectType",
+    "memberof": "source/utils/validations.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/validations.js~getObjectType",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/validations.js",
+    "importStyle": "{getObjectType}",
+    "description": "Get object type",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prop",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "objectType",
+    "memberof": "source/utils/validations.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/validations.js~objectType",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/validations.js",
+    "importStyle": "{objectType}",
+    "description": "Object type",
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} type"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prop",
+        "description": ""
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "type"
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "isUndefinedOrNull",
+    "memberof": "source/utils/validations.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/validations.js~isUndefinedOrNull",
+    "access": "public",
+    "export": true,
+    "importPath": "@vxtool/prime-vanillajs/source/utils/validations.js",
+    "importStyle": "{isUndefinedOrNull}",
+    "description": "Is undefined or null",
+    "lineNumber": 54,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prop",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# Prime VanillaJS\n\n[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)\n[![GitHub issues](https://img.shields.io/github/issues/vxtool/prime-vanillajs.svg)](https://github.com/vxtool/prime-vanillajs/issues)\n![GitHub package.json version](https://img.shields.io/github/package-json/v/vxtool/prime-vanillajs.svg)\n![GitHub Release Date](https://img.shields.io/github/release-date/vxtool/prime-vanillajs.svg)\n![GitHub top language](https://img.shields.io/github/languages/top/vxtool/prime-vanillajs.svg)\n![GitHub repo size](https://img.shields.io/github/repo-size/vxtool/prime-vanillajs.svg)\n![GitHub All Releases](https://img.shields.io/github/downloads/vxtool/prime-vanillajs/total.svg)\n\n## Contributing\n\n- Fork it!\n- Create your feature branch: `git checkout -b my-new-feature`\n- Commit your changes: `git commit -m 'Add some feature'`\n- Push to the branch: `git push origin my-new-feature`\n- Submit a pull request\n\n## Log\n\nCheck [Releases](https://github.com/vxtool/prime-vanillajs/releases) for detailed changelog.\n\n## License\n\n[MIT license](http://hemersonvianna.mit-license.org/) © Hemerson Vianna\n",
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@vxtool/prime-vanillajs\",\n  \"version\": \"1.0.1\",\n  \"description\": \"\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/vxtool/prime-vanillajs.git\"\n  },\n  \"main\": \"source/main.js\",\n  \"scripts\": {\n    \"build\": \"npm run compile && npm run bundle\",\n    \"bundle\": \"browserify ./example/index.compiled.js -o ./example/bundle.js\",\n    \"compile\": \"babel ./example/index.js --out-file ./example/index.compiled.js\",\n    \"lib\": \"babel ./source --out-dir ./lib\",\n    \"release\": \"release-it --no-npm.publish --git.tagName='v${version}' --github.release\",\n    \"doc\": \"esdoc -c esdoc.json\",\n    \"start\": \"http-server ./example -p 9000\"\n  },\n  \"author\": \"Hemerson Vianna <hemerson.lourenco@gmail.com> (http://nerdcalistenico.com.br)\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/vxtool/prime-vanillajs/issues\"\n  },\n  \"homepage\": \"https://github.com/vxtool/prime-vanillajs#readme\",\n  \"devDependencies\": {\n    \"@babel/cli\": \"7.10.4\",\n    \"@babel/core\": \"7.10.4\",\n    \"@babel/plugin-transform-runtime\": \"7.10.4\",\n    \"@babel/preset-env\": \"7.10.4\",\n    \"@babel/runtime\": \"7.10.4\",\n    \"browserify\": \"16.5.1\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"http-server\": \"0.12.3\",\n    \"release-it\": \"13.6.4\",\n    \"uniq\": \"1.0.1\"\n  }\n}\n",
+    "longname": "/Volumes/hd-bkp-2/MAC/projects/github/vxtool/prime-vanillajs/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

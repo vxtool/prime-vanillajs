@@ -1,13 +1,13 @@
-import { hasClass, addClass, removeClass } from './utils/manipulation';
-// import makeRequest from './utils/request';
-import { priceUnformat } from './components/product/price';
+import { hasClass, addClass, removeClass } from "../lib/utils/manipulation";
+// import makeRequest from '../lib/utils/request';
+import { priceUnformat } from "../lib/components/product/price";
 
-const $element = document.querySelector('body');
+const $element = document.querySelector("body");
 
-addClass($element, 'test');
-hasClass($element, 'test');
-removeClass($element, 'test');
+addClass($element, "test");
+hasClass($element, "test");
+removeClass($element, "test");
 
 // makeRequest({ url: '/' }, () => {});
 
-priceUnformat('R$ 123,00');
+priceUnformat("R$ 123,00");
